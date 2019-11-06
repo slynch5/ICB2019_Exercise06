@@ -10,12 +10,13 @@ wages = read.csv("wages.csv", header = TRUE, sep = ",", quote = "") # Read in .c
 file_name <- wages # Set variable for file you want to read
 lines <- 5 # Set variable for the number of lines you want printed from the top
 head(file_name, n = lines) # Print out the first n lines
+file_name[1:lines,] # Another way to print out the first n lines
 
 ## Load the data contained in the provided 'iris.csv' file and write R
 ## code to do the following things:
 
 iris = read.csv("iris.csv", header = TRUE, sep = ",", quote = "")
-
+ 
 # Print the last 2 rows in the last 2 columns to the R terminal
 
 iris[(nrow(iris)-1):nrow(iris), (ncol(iris)-1):ncol(iris)]
